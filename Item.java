@@ -1,9 +1,12 @@
+// item have a unidirectional relationship with company so added there with has a 
+// relationship
+
 public class Item {
     private int itemNo;
     private String itemName;
     private double itemPrice;
 
-    // Gtters and setter
+    // Getters and setter
 
     public int getItemNo() {
         return itemNo;
