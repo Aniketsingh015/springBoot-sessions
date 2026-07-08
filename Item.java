@@ -27,4 +27,11 @@ public class Item {
     public void setItemPrice(){
         this.itemPrice=itemPrice;
     }
+
+    // constructor
+    void Item(int itemNo, String itemName,double itemPrice){
+        this.itemNo=itemNo;
+        this.itemName=itemName;
+        this.itemPrice=itemPrice;
+    }
 }
