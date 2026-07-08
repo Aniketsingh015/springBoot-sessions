@@ -21,14 +21,3 @@ public class Customer {
 
 // IS-A relatioship we use unheritence
 
-class RegisteredCustomer extends Customer{
-    private double discount;
-
-    public double getDiscount(){
-        return this.discount;
-    }
-
-    public void setDiscount(double discount){
-        this.discount=discount;
-    }
-}
