@@ -49,6 +49,22 @@ class Company {
         this.customers=new ArrayList<Customer>();
     }
 
+
+    // functional method
+
+    public double getTotalOrderValue(){
+        double totalOrderValue=0.0;
+
+        for(Customer customer:this.customers){
+            for(Order order:customer.getOrders()){
+                for(OrderItem orderItem:order.getOrderItems()){
+                    totalOrderValue+=orderItem.getQuantity()*orderItem.getItem().getItemPrice();
+                }
+            }
+        }
+
+        return totalOrderValue;
+    }
     
 
     
