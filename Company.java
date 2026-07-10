@@ -54,20 +54,19 @@ class Company {
 
     public double getTotalOrderValue(){
         double totalOrderValue=0.0;
-
         for(Customer customer:this.customers){
-            for(Order order:customer.getOrders()){
-                for(OrderItem orderItem:order.getOrderItems()){
+            for(Order orders:customer.getOrders()){
+                for(OrderItem orderItem:orders.getOrderItems()){
                     totalOrderValue+=orderItem.getQuantity()*orderItem.getItem().getItemPrice();
                 }
             }
+
+        }
+        return totalOrderValue;
+
+        
         }
 
-        return totalOrderValue;
+        
     }
-    
 
-    
-    
-
-}

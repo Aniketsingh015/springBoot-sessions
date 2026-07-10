@@ -51,6 +51,15 @@ public class main {
             company.addCustomer(customer1);
 
 
+            // now registered customer walked into the store
+            var registeredCustomer= new Customer();
+            registeredCustomer.setCustomerID(102);
+            registeredCustomer.setName("Rohit Kumar");
+
+            // registered customer wants to buy 1 pant and 2 shoes
+
+
+
         // displaying the total order value of the company
         double totalOrderValue = company.getTotalOrderValue(); 
         System.out.println("Total Order Value: " + totalOrderValue);
