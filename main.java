@@ -16,6 +16,32 @@ public class main {
         }
 
 
+        // Now a regular customer walked into our shop to buy the items which we have. 
+        var regular =new Customer();
+        regular.setCustomerID(1);
+        regular.setName("Aniket Singh");
+
+        // now customer wants to buy two pants and one shirt
+        var orderItem1 = new OrderItem(laptop, 2);
+        var orderItem2 = new OrderItem(smartPhone, 1);
+
+        // Regular customer walks to the billing counter to place the order. 
+
+        var Order1= new Order(); //order created for the customer
+        Order1.setOrderID(1);    
+        Order1.setCustomer(regular); //order is set for this customer
+        Order1.addOrderItem(orderItem1);
+        Order1.addOrderItem(orderItem2);
+
+        // And the customer made the payment, and the order was over. 
+        regular.addOrder(Order1);
+
+        // now traction is complete then add customer to company
+        company.addCustomer(regular);
+
+        System.out.println("Total Order Value for the company: INR " + company.getTotalOrderValue());
+
+
        
 }
 }
