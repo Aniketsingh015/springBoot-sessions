@@ -6,7 +6,8 @@ import java.util.*;
 class Order{
     private int orderId;
     private Customer customer; //here we are implementing the bidirectional cllection
-    private List <OrderItem> orderItems;
+    private List <OrderItem> orderItems; //this will store in order 
+    // orderItem has-A relationship
     
 
     public void setOrderID(int orderId){
